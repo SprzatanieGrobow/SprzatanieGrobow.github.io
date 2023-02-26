@@ -2,29 +2,79 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Usługi czyszczenia grobów</title>
+    <title>Usługi czyszczenia grobów</title>   
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>Usługi czyszczenia grobów</h1>
-    <h2>Cennik usług</h2>
-    <table>
-      <tr>
-        <td>Sprzątanie + mycie grobu pojedynczego</td>
-        <td>60 PLN</td>
-      </tr>
-      <tr>
-        <td>Sprzątanie + mycie grobu podwójnego</td>
-        <td>80 PLN</td>
-      </tr>
-      <tr>
-        <td>Sprzątanie + mycie grobowca</td>
-        <td>100 PLN</td>
-      </tr>
-      <tr>
-        <td>Inne</td>
-        <td>Do ustalenia</td>
-      </tr>
-    </table>
+    <header id="home">
+    <nav>
+      <div class="nav-container">
+        <h1 class="logo">Sprzątanie Grobów</h1>
+        <div class="nav-links">
+         <a  onclick="home()">Home</a>
+          <a  onclick="uslugi()">Usługi</a>
+          <a  onclick="about()">O nas</a>
+          <a  onclick="kont()">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-image"></div>
+      <div class="hero-text">
+        <h2 class="hero-heading">Wieczna opieka nad Twoimi bliskimi</h2>
+        <p class="hero-subheading">Zadbamy o czystość i piękno ich grobów</p>
+  </div>
+</section>
+    <section class="services">
+      <h2 class="section-title">Nasze usługi</h2>
+      <div class="service-container">
+        <div class="service">
+          <h3 class="service-title">Sprzątanie + mycie grobu pojedynczego</h3>
+          <p class="service-price">60 PLN</p>
+        </div>
+        <div class="service" id="uslugi">
+          <h3 class="service-title">Sprzątanie + mycie grobu podwójnego</h3>
+          <p class="service-price">80 PLN</p>
+        </div>
+        <div class="service">
+          <h3 class="service-title">Sprzątanie + mycie grobowca</h3>
+          <p class="service-price">100 PLN</p>
+        </div>
+        <div class="service">
+          <h3 class="service-title">Inne</h3>
+          <p class="service-price">Do ustalenia</p>
+        </div>
+      </div>
+    </section>
+    <section id="o-nas">
+  <div class="container">
+    <h2 class="section-title">O nas</h2>
+    <p class="section-description">Nasza firma powstała z myślą o tym, aby pomóc ludziom w utrzymaniu grobów ich bliskich w nienagannej czystości i porządku.</p>
+    <p id="about">Historia naszej firmy sięga lat 90-tych, kiedy to nasz założyciel, Jan Kowalski, zaczął pomagać swojej babci w utrzymaniu grobu dziadków. Z czasem, jego usługi stały się coraz bardziej popularne wśród mieszkańców okolicznych miasteczek.</p>
+    <p>W roku 2000, Jan zdecydował się na otwarcie własnej firmy, aby móc pomóc jeszcze większej liczbie osób w utrzymaniu grobów ich bliskich. Zatrudnił kilka osób, którzy podzielili jego pasję do tego typu pracy, a wkrótce firma zaczęła działać na pełnym etacie.</p>
+    <p>Dzisiaj nasza firma zatrudnia dziesięć osób, a my nadal rozwijamy naszą ofertę, aby móc sprostać potrzebom naszych klientów i pomagać w utrzymaniu grobów ich bliskich przez wiele lat.</p>
+  </div>
+</section>
+
+    <section id="contact">
+  <div class="contact-container">
+    <div class="contact-info" id="kont">
+      <h2>Kontakt</h2>
+      <p><i class="fas fa-phone"></i> Telefon: 123 456 789</p>
+      <p><i class="fas fa-envelope"></i> Email: kontakt@sprzataniegrobow.com</p>
+    </div>
+    <form class="contact-form">
+      <h2>Napisz do nas</h2>
+      <input type="text" placeholder="Imię" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Wiadomość" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </div>
+</section>
+
   </body>
 </html>
