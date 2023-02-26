@@ -13,10 +13,10 @@
       <div class="nav-container">
         <h1 class="logo">Sprzątanie Grobów</h1>
         <div class="nav-links">
-         <a  onclick="home()">Home</a>
-          <a  onclick="uslugi()">Usługi</a>
-          <a  onclick="about()">O nas</a>
-          <a  onclick="kont()">Kontakt</a>
+         <a href=# onclick="home()">Home</a>
+          <a href=# onclick="uslugi()">Usługi</a>
+          <a href=# onclick="about()">O nas</a>
+          <a href=# onclick="kont()">Kontakt</a>
         </div>
       </div>
     </nav>
@@ -66,11 +66,10 @@
       <p><i class="fas fa-phone"></i> Telefon: 123 456 789</p>
       <p><i class="fas fa-envelope"></i> Email: kontakt@sprzataniegrobow.com</p>
     </div>
-    <form class="contact-form">
+    <form class="contact-form" action="https://formspree.io/f/mpzerakv" method="POST">
       <h2>Napisz do nas</h2>
-      <input type="text" placeholder="Imię" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Wiadomość" required></textarea>
+      <input type="email" placeholder="Email" name="email" required>
+      <textarea placeholder="Wiadomość" ame="message" required></textarea>
       <button type="submit">Wyślij</button>
     </form>
   </div>
